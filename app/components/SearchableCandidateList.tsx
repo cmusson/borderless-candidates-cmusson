@@ -24,7 +24,7 @@ const SearchableCandidateList = ({ candidates, search }: ISCDProps) => {
         style={{ width: "fit-content" }}
         className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"
       >
-        <div className="col-span-full flex justify-end gap-2 mt-4">
+        <div className="col-span-full flex flex-col justify-end gap-2 mt-4 sm:flex-row">
           <Search handleChange={handleChange} searchStr={searchStr} />
           <Filter />
         </div>

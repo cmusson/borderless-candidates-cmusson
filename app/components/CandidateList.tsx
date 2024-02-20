@@ -48,8 +48,8 @@ const CandidateList = async () => {
 
     return candidates.filter(
       (candidate) =>
-        candidate.name.toLowerCase().includes(search) ||
-        candidate.role.toLowerCase().includes(search)
+        candidate.name.toLowerCase().includes(search.toLocaleLowerCase()) ||
+        candidate.role.toLowerCase().includes(search.toLocaleLowerCase())
     );
   };
 
