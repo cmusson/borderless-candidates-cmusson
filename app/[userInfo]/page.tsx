@@ -11,7 +11,7 @@ interface IUserInfoProps {
 export default function Home({ searchParams }: IUserInfoProps) {
   return (
     <main className="py-2 px-4 flex flex-col gap-6">
-      <section className="bg-white px-4 py-2 rounded flex flex-col border border-gray-200 md:flex-row">
+      <section className="bg-white px-4 py-2 rounded-lg flex flex-col border border-gray-200 md:flex-row">
         <UserInfoLeft
           nationality={searchParams.nationality}
           name={searchParams.name}

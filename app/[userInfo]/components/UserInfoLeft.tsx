@@ -18,7 +18,7 @@ const UserInfoLeft = ({
     <div className="w-full md:pr-2 md:w-1/2">
       <div className="flex flex-row items-center gap-4 mb-4">
         <Image
-          className="rounded"
+          className="rounded-lg"
           width={60}
           height={60}
           src={"/world_flag.png"}
@@ -34,7 +34,7 @@ const UserInfoLeft = ({
       </div>
 
       <Image
-        className="border border-black rounded w-full"
+        className="border border-black rounded-lg w-full"
         width={400}
         height={400}
         src={image}

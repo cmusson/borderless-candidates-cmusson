@@ -40,11 +40,11 @@ const Candidate = ({ candidate }: ICandidateProps) => {
         },
       }}
     >
-      <div className="bg-white border border-gray-200 rounded p-3 flex flex-col items-center max-w-60 min-w-60 hover:scale-105 transition-transform">
+      <div className="bg-white border border-gray-200 rounded-lg p-3 flex flex-col items-center max-w-60 min-w-60 hover:scale-105 transition-transform">
         <Image
           src={image}
           alt="candidate image"
-          className="border border-gray-200 rounded"
+          className="border border-gray-200 rounded-lg"
           width={200}
           height={200}
         />
@@ -54,7 +54,7 @@ const Candidate = ({ candidate }: ICandidateProps) => {
               {name}
             </div>
             <Image
-              className="rounded"
+              className="rounded-lg"
               width={40}
               height={40}
               alt={nationality}

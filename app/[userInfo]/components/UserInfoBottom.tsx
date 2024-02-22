@@ -31,14 +31,14 @@ const UserInfoBottom = ({
   ];
 
   return (
-    <section className="bg-white px-4 py-2 rounded flex flex-col gap-4 border border-gray-200 md:flex-row">
+    <section className="bg-white px-4 py-2 rounded-lg flex flex-col gap-4 border border-gray-200 md:flex-row">
       <div className="w-full md:w-1/2">
         <h3 className="font-bold text-xl">Experience</h3>
-        <button className="flex flex-row items-center justify-between rounded w-full text-left p-1 hover:bg-blue-200">
+        <button className="flex flex-row items-center justify-between rounded-lg w-full text-left p-1 hover:bg-blue-200">
           <div className="flex flex-row gap-2">
             <Image
               src="/carer-icon.svg"
-              alt="carer-icon"
+              alt="experience"
               width={20}
               height={20}
               color={"teal"}
@@ -52,7 +52,7 @@ const UserInfoBottom = ({
           </div>
           <Image
             src="/chevron-right.svg"
-            alt="carer-icon"
+            alt="more detail"
             width={15}
             height={15}
           />
@@ -62,14 +62,25 @@ const UserInfoBottom = ({
       <div className="w-full md:w-1/2">
         <h3 className="font-bold text-xl">About & Preferences</h3>
         <div>
-          {information.map((item, idx) => (
-            <InfoPiece
-              key={`${item.info}-${idx}`}
-              info={item.info}
-              detail={item.detail}
-              bottom={item.bottom}
+          <div>
+            {information.map((item, idx) => (
+              <InfoPiece
+                key={`${item.info}-${idx}`}
+                info={item.info}
+                detail={item.detail}
+                bottom={item.bottom}
+              />
+            ))}
+          </div>
+          <div className="flex flex-row items-center text-blue-400 text-xs gap-2 m-4">
+            <Image
+              src="/license-icon.svg"
+              alt="driving license"
+              width={15}
+              height={15}
             />
-          ))}
+            <div>Driving License</div>
+          </div>
         </div>
       </div>
     </section>

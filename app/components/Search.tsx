@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 
 interface ISearchProps {
   handleChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
@@ -13,7 +13,7 @@ const Search = ({ handleChange, searchStr }: ISearchProps) => {
       <input
         type="text"
         placeholder="Search"
-        className="bg-white border border-gray-200 rounded p-1 text-gray-500 pl-8"
+        className="bg-white border border-gray-200 rounded-lg p-1 text-gray-500 pl-8"
         value={searchStr}
         onChange={handleChange}
       />

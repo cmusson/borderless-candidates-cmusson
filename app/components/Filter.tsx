@@ -4,7 +4,7 @@ import React from "react";
 // pass through server-side filter function to filter on the server
 const Filter = () => {
   return (
-    <button className="bg-white border border-gray-200 rounded p-1 text-gray-500 flex flex-row gap-2 items-center hover:bg-gray-200 w-fit">
+    <button className="bg-white border border-gray-200 rounded-lg p-1 text-gray-500 flex flex-row gap-2 items-center hover:bg-gray-200 w-fit">
       <Image src="/filter-icon.svg" width={20} height={20} alt="filter" />
       <div>Filter</div>
       <div>16</div>

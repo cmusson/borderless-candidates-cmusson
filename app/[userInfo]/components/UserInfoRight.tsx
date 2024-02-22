@@ -31,9 +31,11 @@ const UserInfoRight = ({
   ];
 
   return (
-    <div className="w-full md:w-1/2">
+    <div className="w-full pl-2 md:w-1/2">
       <h3 className="font-bold text-xl mb-2 mt-2 md:mt-0">Overview</h3>
-      <div className="bg-green-200 w-fit px-1 rounded mb-4">{role}</div>
+      <div className="bg-green-200 w-fit rounded-lg mb-4 text-sm pb-1 px-2">
+        {role}
+      </div>
       <div>
         {information.map((item, idx) => (
           <InfoPiece
@@ -48,7 +50,7 @@ const UserInfoRight = ({
         Look risk case parent. Chair they away question organization around
         attach. Half bit indeed provide relationship myself.
       </p>
-      <button className="w-full bg-blue-400 rounded text-white p-1 hover:bg-blue-500 flex flex-row items-center justify-center gap-1">
+      <button className="w-full bg-blue-400 rounded-lg text-white p-1 hover:bg-blue-500 flex flex-row items-center justify-center gap-1">
         <Image src="/cv.svg" alt="cv" width={20} height={20} />
         <div className="text-xs">CV</div>
       </button>
